@@ -104,8 +104,8 @@ ul li a:hover,ul li a:focus{
     content: ' ';
     display: block;
     position: relative;
-    /*left: 1px;*/
-    top: 5px;
+    left: -3px;
+    top: 6px;
     width: 75px;
     height: 25px;
     z-index: 2;
@@ -114,9 +114,9 @@ ul li a:hover,ul li a:focus{
     -webkit-box-shadow: 0 0 5px #888;
     -moz-box-shadow: 0 0 5px #888;
     box-shadow: 2px 2px 2px #000;
-    -webkit-transform: rotate(-9deg);
-    -moz-transform: rotate(-9deg);
-    -o-transform: rotate(-9deg);
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
 }
 
 .stickys a{

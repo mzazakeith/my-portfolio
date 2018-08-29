@@ -15,4 +15,4 @@ pyuploadcare==2.5.0
 requests==2.19.1
 six==1.11.0
 urllib3==1.23
-whitenoise==4.0
+whitenoise==3.3.1

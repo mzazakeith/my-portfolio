@@ -223,6 +223,7 @@
 }
 
 .tooltip {
+    opacity: 1!important;
     position: absolute;
 
     padding: 0 10px;
@@ -257,6 +258,7 @@
             rgb(230,230,230) 0%,
             rgb(255,255,255) 100%
     );
+
 }
 .tooltip:before {
     content: '';
@@ -322,4 +324,7 @@
 
 #infografik .rightside{
     margin-top: -400px;
+}
+.leftside{
+    margin-top: 40px;
 }

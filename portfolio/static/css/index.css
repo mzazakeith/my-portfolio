@@ -23,8 +23,8 @@ body {
 /*end of grid*/
 
 
-/*sticky notes*/
 
+/*sticky notes*/
 
 *{
     margin:0;
@@ -215,11 +215,6 @@ ul li a:hover,ul li a:focus{
 .main-profile-content{
     padding-top: 7%;
 }
-/*.main-profile-container{*/
-/*-o-transform:rotate(-1deg);*/
-/*-webkit-transform:rotate(-1deg);*/
-/*-moz-transform:rotate(-1deg);*/
-/*}*/
 
 .conatact-modal-sticky ul li p{
     font-size:200%;
@@ -260,3 +255,610 @@ ul li a:hover,ul li a:focus{
     color: black;
 }
 
+
+/*projects*/
+/* .container-book {
+  margin-left: 200px;
+  margin-top: 50px;
+} */
+
+.book-cover {
+    display: inline-block;
+    position: relative;
+}
+
+.book-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    background: url('http://www.readitforward.com/wp-content/uploads/2016/10/book-cover-2-1.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100%;
+
+    -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+}
+
+.book-cover img {
+    padding-top: 20px;
+    padding-left: 0px;
+    width: 83%;
+    padding-bottom: 20px;
+    position: relative;
+    z-index: 8;
+    /*   -webkit-transform: perspective(100) rotateY(-3deg) rotateX(0deg); */
+    -webkit-transform: perspective(150px) rotateY(-3deg) skewY(8deg);
+    -webkit-transform: perspective(170px) rotateY(-3deg) skewY(8deg) skewX(1.5deg);
+    z-index: 9;
+}
+
+.book {
+    position: relative;
+
+}
+
+
+/*.....................................................responsivity..................................................*/
+
+/* Samsung Galaxy S5 ----------- */
+
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+    body{
+        overflow-y: scroll;
+        height: 146vh;
+    }
+    #content{
+        height:146vh;
+        background-size:70px 70px;
+    }
+    ul li a {
+        height: 30em;
+        width: 30em;
+    }
+
+    html {
+        height: 146vh;
+    }
+    ul li p{
+        font-size:280%;
+    }
+    #notes li::before {
+        top: 8px;
+        width: 95px;
+        height: 35px;
+        background-color: rgba(243,245,228,0.9);
+        border: 2px solid rgba(255,255,255,0.9);
+    }
+    h1 {
+        font-size: 3.5rem;
+    }
+    h2 {
+        font-size: 2.6rem;
+    }
+    .stickys #notes li{
+        margin-left: 200px;
+    }
+    .footer{
+        font-size: 200%;
+    }
+    ul li:nth-child(1) img{
+        padding-top: 10%;
+        padding-left:0;
+    }
+    div ul:nth-child(1) .backimg{
+        margin-left: 0;
+    }
+    div:nth-child(1) .backimgholder{
+        padding-left: 0;
+
+    }
+
+    ul li:nth-child(2) img{
+        padding-top:38vh;
+        padding-left:98%;
+    }
+    div ul:nth-child(2) .backimg{
+        margin-left: 0;
+    }
+    div:nth-child(2) .backimgholder{
+        padding-left: 0;
+
+    }
+
+    ul li:nth-child(3) img{
+        padding-top:20vh;
+    }
+
+    ul li:nth-child(4) img{
+        padding-top:60vh;
+        padding-left: 97%;
+    }
+    div ul:nth-child(4) .backimg{
+        margin-left: 0;
+    }
+    div:nth-child(4) .backimgholder{
+        padding-left: 0;
+    }
+    .modal-title{
+        font-size: 3rem!important;
+    }
+    .modal-content {
+        min-width: 100vw!important;
+    }
+    .modal-grid{
+        height:90vh;
+        background-size:70px 70px;
+    }
+    .modal-grid .col-md-5{
+        min-width: 90%;
+        padding-left: 26%;
+    }
+    .main-profile-content h3{
+        font-size: 3rem;
+    }
+    .main-profile-content h5{
+        font-size: 2.35rem;
+    }
+    .modal-grid .col-md-7{
+        min-width: 100%;
+        text-align: justify;
+    }
+    .main-profile-content h1{
+        text-align: center;
+    }
+}
+
+/* iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+    body{
+        overflow-y: scroll;
+        height: 146vh;
+    }
+    #content{
+        height:146vh;
+        background-size:70px 70px;
+    }
+    ul li a {
+        height: 30em;
+        width: 30em;
+    }
+
+    html {
+        height: 146vh;
+    }
+    ul li p{
+        font-size:280%;
+    }
+    #notes li::before {
+        top: 8px;
+        width: 95px;
+        height: 35px;
+        background-color: rgba(243,245,228,0.9);
+        border: 2px solid rgba(255,255,255,0.9);
+    }
+    h1 {
+        font-size: 3.5rem;
+    }
+    h2 {
+        font-size: 2.6rem;
+    }
+    .stickys #notes li{
+        margin-left: 200px;
+    }
+    .footer{
+        font-size: 200%;
+    }
+    ul li:nth-child(1) img{
+        padding-top: 10%;
+        padding-left:0;
+    }
+    div ul:nth-child(1) .backimg{
+        margin-left: 0;
+    }
+    div:nth-child(1) .backimgholder{
+        padding-left: 0;
+
+    }
+
+    ul li:nth-child(2) img{
+        padding-top:38vh;
+        padding-left:95%;
+    }
+    div ul:nth-child(2) .backimg{
+        margin-left: 0;
+    }
+    div:nth-child(2) .backimgholder{
+        padding-left: 0;
+
+    }
+
+    ul li:nth-child(3) img{
+        padding-top:20vh;
+    }
+
+    ul li:nth-child(4) img{
+        padding-top:60vh;
+        padding-left: 95%;
+    }
+    div ul:nth-child(4) .backimg{
+        margin-left: 0;
+    }
+    div:nth-child(4) .backimgholder{
+        padding-left: 0;
+    }
+    .modal-title{
+        font-size: 3rem!important;
+    }
+    .modal-content {
+        min-width: 100vw!important;
+    }
+    .modal-grid{
+        height:90vh;
+        background-size:70px 70px;
+    }
+    .modal-grid .col-md-5{
+        min-width: 90%;
+        padding-left: 26%;
+    }
+    .main-profile-content h3{
+        font-size: 3rem;
+    }
+    .main-profile-content h5{
+        font-size: 2.35rem;
+    }
+    .modal-grid .col-md-7{
+        min-width: 100%;
+        text-align: justify;
+    }
+    .main-profile-content h1{
+        text-align: center;
+    }
+}
+
+/* iPhone 6 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+    body{
+        overflow-y: scroll;
+        height: 146vh;
+    }
+    #content{
+        height:146vh;
+        background-size:70px 70px;
+    }
+    ul li a {
+        height: 30em;
+        width: 30em;
+    }
+
+    html {
+        height: 146vh;
+    }
+    ul li p{
+        font-size:280%;
+    }
+    #notes li::before {
+        top: 8px;
+        width: 95px;
+        height: 35px;
+        background-color: rgba(243,245,228,0.9);
+        border: 2px solid rgba(255,255,255,0.9);
+    }
+    h1 {
+        font-size: 3.5rem;
+    }
+    h2 {
+        font-size: 2.6rem;
+    }
+    .stickys #notes li{
+        margin-left: 200px;
+    }
+    .footer{
+        font-size: 200%;
+    }
+    ul li:nth-child(1) img{
+        padding-top: 10%;
+        padding-left:0;
+    }
+    div ul:nth-child(1) .backimg{
+        margin-left: 0;
+    }
+    div:nth-child(1) .backimgholder{
+        padding-left: 0;
+
+    }
+
+    ul li:nth-child(2) img{
+        padding-top:38vh;
+        padding-left:95%;
+    }
+    div ul:nth-child(2) .backimg{
+        margin-left: 0;
+    }
+    div:nth-child(2) .backimgholder{
+        padding-left: 0;
+
+    }
+
+    ul li:nth-child(3) img{
+        padding-top:20vh;
+    }
+
+    ul li:nth-child(4) img{
+        padding-top:60vh;
+        padding-left: 95%;
+    }
+    div ul:nth-child(4) .backimg{
+        margin-left: 0;
+    }
+    div:nth-child(4) .backimgholder{
+        padding-left: 0;
+    }
+    .modal-title{
+        font-size: 3rem!important;
+    }
+    .modal-content {
+        min-width: 100vw!important;
+    }
+    .modal-grid{
+        height:90vh;
+        background-size:70px 70px;
+    }
+    .modal-grid .col-md-5{
+        min-width: 90%;
+        padding-left: 26%;
+    }
+    .main-profile-content h3{
+        font-size: 3rem;
+    }
+    .main-profile-content h5{
+        font-size: 2.35rem;
+    }
+    .modal-grid .col-md-7{
+        min-width: 100%;
+        text-align: justify;
+    }
+    .main-profile-content h1{
+        text-align: center;
+    }
+}
+/* iPhone 6+ ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) {
+    body{
+        overflow-y: scroll;
+        height: 146vh;
+    }
+    #content{
+        height:146vh;
+        background-size:70px 70px;
+    }
+    ul li a {
+        height: 30em;
+        width: 30em;
+    }
+
+    html {
+        height: 146vh;
+    }
+    ul li p{
+        font-size:280%;
+    }
+    #notes li::before {
+        top: 8px;
+        width: 95px;
+        height: 35px;
+        background-color: rgba(243,245,228,0.9);
+        border: 2px solid rgba(255,255,255,0.9);
+    }
+    h1 {
+        font-size: 3.5rem;
+    }
+    h2 {
+        font-size: 2.6rem;
+    }
+    .stickys #notes li{
+        margin-left: 200px;
+    }
+    .footer{
+        font-size: 200%;
+    }
+    ul li:nth-child(1) img{
+        padding-top: 10%;
+        padding-left:0;
+    }
+    div ul:nth-child(1) .backimg{
+        margin-left: 0;
+    }
+    div:nth-child(1) .backimgholder{
+        padding-left: 0;
+
+    }
+
+    ul li:nth-child(2) img{
+        padding-top:38vh;
+        padding-left:95%;
+    }
+    div ul:nth-child(2) .backimg{
+        margin-left: 0;
+    }
+    div:nth-child(2) .backimgholder{
+        padding-left: 0;
+
+    }
+
+    ul li:nth-child(3) img{
+        padding-top:20vh;
+    }
+
+    ul li:nth-child(4) img{
+        padding-top:60vh;
+        padding-left: 95%;
+    }
+    div ul:nth-child(4) .backimg{
+        margin-left: 0;
+    }
+    div:nth-child(4) .backimgholder{
+        padding-left: 0;
+    }
+    .modal-title{
+        font-size: 3rem!important;
+    }
+    .modal-content {
+        min-width: 100vw!important;
+    }
+    .modal-grid{
+        height:90vh;
+        background-size:70px 70px;
+    }
+    .modal-grid .col-md-5{
+        min-width: 90%;
+        padding-left: 26%;
+    }
+    .main-profile-content h3{
+        font-size: 3rem;
+    }
+    .main-profile-content h5{
+        font-size: 2.35rem;
+    }
+    .modal-grid .col-md-7{
+        min-width: 100%;
+        text-align: justify;
+    }
+    .main-profile-content h1{
+        text-align: center;
+    }
+}
+/* Mobile M ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 560px) and (orientation : portrait) {
+    body{
+        height: 175vh;
+    }
+    #content{
+        height:175vh;
+    }
+
+    html {
+        height: 175vh;
+    }
+
+}
+@media only screen and (min-device-width: 425px) and (max-device-height: 560px) and (orientation : portrait) {
+    body{
+        height: 197vh;
+    }
+    #content{
+        height:197vh;
+    }
+    html {
+        height: 197vh;
+    }
+}
+
+/* Pixel 2 ----------- */
+@media only screen and (min-device-width: 411px) and (max-device-height: 731px) and (orientation : portrait) {
+    body{
+        overflow-y: scroll;
+        height: 146vh;
+    }
+    #content{
+        height:146vh;
+        background-size:70px 70px;
+    }
+    ul li a {
+        height: 30em;
+        width: 30em;
+    }
+
+    html {
+        height: 146vh;
+    }
+    ul li p{
+        font-size:280%;
+    }
+    #notes li::before {
+        top: 8px;
+        width: 95px;
+        height: 35px;
+        background-color: rgba(243,245,228,0.9);
+        border: 2px solid rgba(255,255,255,0.9);
+    }
+    h1 {
+        font-size: 3.5rem;
+    }
+    h2 {
+        font-size: 2.6rem;
+    }
+    .stickys #notes li{
+        margin-left: 200px;
+    }
+    .footer{
+        font-size: 200%;
+    }
+    ul li:nth-child(1) img{
+        padding-top: 10%;
+        padding-left:0;
+    }
+    div ul:nth-child(1) .backimg{
+        margin-left: 0;
+    }
+    div:nth-child(1) .backimgholder{
+        padding-left: 0;
+
+    }
+
+    ul li:nth-child(2) img{
+        padding-top:38vh;
+        padding-left:100%;
+    }
+    div ul:nth-child(2) .backimg{
+        margin-left: 0;
+    }
+    div:nth-child(2) .backimgholder{
+        padding-left: 0;
+
+    }
+
+    ul li:nth-child(3) img{
+        padding-top:20vh;
+    }
+
+    ul li:nth-child(4) img{
+        padding-top:60vh;
+        padding-left: 95%;
+    }
+    div ul:nth-child(4) .backimg{
+        margin-left: 0;
+    }
+    div:nth-child(4) .backimgholder{
+        padding-left: 0;
+    }
+    .modal-title{
+        font-size: 3rem!important;
+    }
+    .modal-content {
+        min-width: 100vw!important;
+    }
+    .modal-grid{
+        height:90vh;
+        background-size:70px 70px;
+    }
+    .modal-grid .col-md-5{
+        min-width: 90%;
+        padding-left: 26%;
+    }
+    .main-profile-content h3{
+        font-size: 3rem;
+    }
+    .main-profile-content h5{
+        font-size: 2.35rem;
+    }
+    .modal-grid .col-md-7{
+        min-width: 100%;
+        text-align: justify;
+    }
+    .main-profile-content h1{
+        text-align: center;
+    }
+}
